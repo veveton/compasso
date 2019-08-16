@@ -52,3 +52,4 @@ Dicas:
 * Procure fazer uma entrega simples mas consistente, usando a experiência e conhecimento adquiridos durante sua carreira;
 * Não se preocupe em entregar algo extremamente completo ou rebuscado, não vamos usar este código em produção;
 * Tudo será avaliado, dê o seu melhor!
+* Evite fazer Pull Request ou Fork deste repositório.
