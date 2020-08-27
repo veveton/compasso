@@ -13,6 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EntityScan("br.com.teste.compasso.model")
 @EnableJpaRepositories("br.com.teste.compasso.repositorio")
 @EnableSwagger2
+@ComponentScan("br.com.teste.compasso")
 public class SpringBootInterviewApplication {
 
 	public static void main(String[] args) {

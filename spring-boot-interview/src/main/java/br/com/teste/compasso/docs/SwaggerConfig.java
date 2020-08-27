@@ -16,7 +16,7 @@ public class SwaggerConfig {
 	@Bean
 	public Docket apiDoc() {
 		return new Docket(DocumentationType.SWAGGER_2).select() //
-				.apis(RequestHandlerSelectors.any()) //
+				.apis(RequestHandlerSelectors.basePackage("br.com.teste.compasso.endpoint.controller")) //
 				.paths(PathSelectors.any()) //
 				.build() //
 				.apiInfo(metaData()); //
@@ -26,7 +26,7 @@ public class SwaggerConfig {
 		return new ApiInfoBuilder().title("Teste Spring Boot Compasso") //
 				.description("Prova técnica") //
 				.version("1.0") //
-				.contact(new Contact("Everton Meirelles", "XXXXXXX", "everton.meirelles.silva@gmail.com")) //
+				.contact(new Contact("Everton Meirelles", null, "everton.meirelles.silva@gmail.com")) //
 				.license("Apache License Version 2.0") //
 				.licenseUrl("https://www.apache.org/license/LICENSE-2.0") //
 				.build();
